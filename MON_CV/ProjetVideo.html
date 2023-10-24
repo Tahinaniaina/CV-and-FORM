@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ProjetVideo.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
+    <title>Projet 2</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <i class="fa fa-phone"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fa fa-envelope"></i>
+        </nav>
+        <nav class="nav2">
+            <div class="divheader1">
+                <img src="./image/msi-logo.jpg">
+                <div class="input">
+                    <input type="text" placeholder="inserer votre recherche" required>
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <div class="home"><i class="fa fa-home"></i></div>
+            </div>
+            <div class="divheader2">
+                <ul>
+                    <li><a href="#a-propos">A PROPOS</a></li>
+                    <li><a href="#clips">CLIPS</a></li>
+                    <li><a href="#fantawasome">FONTAWASOME</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="section1" id="a-propos">
+        <div class="div1">
+            <h1 class="bouger" id="touche"><span class="e1" id="e1">VOS</span> MEILLEUR <span class="e2" id="e2">CLIPS</span></h1>
+        </div>
+    </section>
+    <section class="section-texte" id="clips">
+        <i class="fa fa-tv"></i>
+        <h1 class="tay" onclick="render()">NOS CLIPS VIDEO</h1>
+        <i class="fa fa-tv"></i>
+    </section>
+    <section class="video-type">
+        <div class="clip-slows">
+            <h1 class="type">CLIP SLOWS</h1>
+            <div class="video-liste-slows">
+                <div class="clip1">
+                    <video src="./video/slow/Efa voasoratra  Anyah ft Rotsy Clip.mp4" controls loop poster="./image/efa voasoratra.png"></video>
+                    <h2 class="titre">EFA VOASORATRA</h2>
+                    <h5 class="artistes">Anyah & Rotsy</h5>
+                </div>
+                <div class="clip2">
+                    <video src="./video/slow/hanalavitra anao -johanne.mp4"  controls loop poster="./image/johanne.png"></video>
+                    <h2 class="titre">HANALAVITRA</h2>
+                    <h5 class="artistes">Johanne</h5>
+                </div>
+                <div class="clip3">
+                    <video src="./video/slow/ngoma shyn(360p).mp4"  controls loop poster="./image/ngoma.png"></video>
+                    <h2 class="titre">NGOMA</h2>
+                    <h5 class="artistes">Shyn</h5>
+                </div>
+            </div>
+        </div>
+        <div class="clip-variete">
+            <h1 class="type">CLIP VARIÉTÉ</h1>
+            <div class="video-liste-variete">
+                <div class="clip4">
+                    <video src="./video/variete/---ALSON ✘ SKYLAR - Tsy Miala Aminao  ( Official Video ).mp4" controls loop poster="./image/alson.png"></video>
+                    <h2 class="titre">TSY MIALA AMINAO</h2>
+                    <h5 class="artistes">Alson</h5>
+                </div>
+                <div class="clip5">
+                    <video src="./video/variete/lay anjeliko.mp4"  controls loop poster="./image/lay anjeliko.png"></video>
+                    <h2 class="titre">LAY ANJELIKO</h2>
+                    <h5 class="artistes">Mirado</h5>
+                </div>
+                <div class="clip6">
+                    <video src="./video/variete/lay tianao.mp4"  controls loop poster="./image/lay tianao.png"></video>
+                    <h2 class="titre">LAY TINAO</h2>
+                    <h5 class="artistes">Marion</h5>
+                </div>
+            </div>
+        </div>
+        <div class="clip-rock">
+            <h1 class="type">CLIP ROCK</h1>
+            <div class="video-liste-rock">
+                <div class="clip7">
+                    <video src="./video/rock/Ambondrona-Eny sa tsia.mp4" controls loop poster="./image/fito andro.png"></video>
+                    <h2 class="titre">TSY HAY</h2>
+                    <h5 class="artistes">Ambondrona</h5>
+                </div>
+                <div class="clip8">
+                    <video src="./video/rock/aza ela any ambondrona(360p).mp4" controls loop poster="./image/aza ela.png"></video>
+                    <h2 class="titre">AZA ELA ANY</h2>
+                    <h5 class="artistes">Ambondrona</h5>
+                </div>
+                <div class="clip9">
+                    <video src="./video/rock/nofinofy.mp4" controls loop poster="./image/nofinofy.png"></video>
+                    <h2 class="titre">NOFINOFY</h2>
+                    <h5 class="artistes">Red</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fontawesome" id="fantawasome">
+        <div class="mobile">
+            <div class="i">
+                <i class="fa fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile</h3>
+        </div>
+        <div class="ecran-large">
+            <div class="i">
+                <i class="fa fa-tv"></i>
+            </div>
+            <h3>Ecran large</h3>
+        </div>
+        <div class="portable">
+            <div class="i">
+                <i class="fa fa-laptop"></i>
+            </div>
+            <h3>Portable</h3>
+        </div>
+    </section>
+    <section class="inscription" id="contact">
+        <div class="text-animation">
+            <div class="h1">
+                <h1>INSCRIVER VOUS DES MAINTENANT</h1>
+            </div>
+            <div class="h2">
+                <h2>Ne ratez pas notre meilleur video</h2>
+            </div>
+            <div class="react">
+                <i class="fab fa-react"></i>
+            </div>
+        </div>
+        <div class="formulaire">
+            <form method="post" action="">
+                <input type="text" placeholder=" entrer votre nom" class="nom" required>
+                <input type="text" placeholder=" entrer votre email" class="email" required>
+                <textarea placeholder=" entrer votre message" class="message"></textarea>
+                <input type="submit" value="Envoyer" class="submit" style="font-size: 1.3vw;">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&#169copyright2022</p>
+    </footer>
+</body>
+
+</html>

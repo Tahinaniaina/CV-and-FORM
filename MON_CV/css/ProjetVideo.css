@@ -1,0 +1,418 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+}
+
+header .nav1{
+    background-color: rgb(122, 122, 62);
+    display: flex;
+    justify-content: end;
+}
+
+header .nav1 i{
+    margin: 0.5%;
+    color: blue;
+}
+
+header .nav2{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header .nav2 .divheader1{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav2 .divheader1 img{
+    width: 10vw;
+    height: 3vw;
+    margin: 0vw 1vw;
+}
+
+header .nav2 .divheader1 .input{
+    width: 30vw;
+    padding: 0vw;
+    display: flex;
+    justify-content: center;
+    margin: 0.2vw 2vw;
+}
+
+header .nav2 .divheader1 .input input{
+    width: 15vw;
+    height: 2vw;
+}
+
+header .nav2 .divheader1 .input button{
+    width: 2vw;
+    height: 2vw;
+    padding: 0.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .nav2 .divheader1 .input button i{
+    font-size: 1.5vw;
+}
+
+header .nav2 .divheader1 .home{
+    font-size: 2vw;
+}
+
+header .nav2 .divheader2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+header .nav2 .divheader2 ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .nav2 .divheader2 ul li{
+    padding: 1vw;
+    list-style: none;
+}
+
+header .nav2 .divheader2 ul li a{
+    color: #232f49;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3vw;
+}
+
+header .nav2 .divheader2 ul li a:hover{
+    color: rgb(46, 172, 46);
+    font-size: 1.4vw;
+}
+
+.section1{
+    background-image: url("../image/lac-italy.jpg");
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;  
+    height: 50vw;
+}
+
+.section1 .div1{
+    background-color: rgba(0,0,0,0.8);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 50vw;
+}
+
+.section1 .div1 h1{
+    font-size: 4vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.2vw 0.2vw 0.1vw white;
+}
+
+.section1 .div1 h1:hover{
+    color: white;
+}
+
+.section1 .div1 h1:hover .e1 {
+    animation: none;
+    color: white;
+    display: inline-block;
+    transform: skewX(20deg);
+}
+
+.section1 .bouger .e1{
+    color: red;
+    display: inline-block;
+    animation: slide1 2s ease-in-out infinite alternate;
+}
+
+@keyframes slide1{
+    0%{
+        transform: translateX(-10vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.section1 .e2{
+    color: green;
+    display: inline-block;
+    animation: slide2 2s ease-in-out infinite alternate;
+}
+
+@keyframes slide2{
+    0%{
+        transform: translateX(10vw);
+    }
+    100%{
+        transform: translateX(0vw);
+    }
+}
+
+.section1 .div1 h1:hover .e2 {
+    animation: none;
+    color: white;
+    display: inline-block;
+    transform: skewX(-30deg);
+}
+
+.section-texte{
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1vw;
+}
+
+.section-texte i{
+    margin: 0.5vw;
+    font-size: 3.5vw;
+}
+
+.section-texte h1{
+    margin: 0vw 0.5vw;
+    font-size: 3.5vw;
+}
+
+.video-type{
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    padding: 5vw 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.video-type h1{
+    text-align: end;
+    color: red;
+    text-shadow: 0.2vw 0.2vw 0.1vw white;
+}
+
+.video-type video{
+    width: 30vw;
+    height: 25vw;
+}
+
+.video-type .video-liste-slows,.video-liste-variete,.video-liste-rock{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    border: 2px solid yellow;
+    box-shadow: 5px 5px 3px yellow;
+}
+
+@media(max-width:720px){
+    .video-type .video-liste-slows,.video-liste-variete,.video-liste-rock{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        border: 2px solid yellow;
+        box-shadow: 5px 5px 3px yellow;
+    }
+    .video-type video{
+        width: 47vw;
+        height: 35vw;
+    }
+}
+
+@media(max-width:480px){
+    .video-type .video-liste-slows,.video-liste-variete,.video-liste-rock{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        border: 2px solid yellow;
+        box-shadow: 5px 5px 3px yellow;
+    }
+    .video-type video{
+        width: 90vw;
+        height: 65vw;
+    }
+}
+
+.video-type h1{
+    margin: 3vw 5vw;
+    font-size: 3vw;
+}
+
+.video-type .clip1,.clip2,.clip3,.clip4,.clip5,.clip6,.clip7,.clip8,.clip9{
+    border: 2px solid yellow;
+    display:flex;
+    flex-direction: column;
+}
+
+.video-type .titre{
+    color: yellow;
+    text-align: center;
+    margin: 1vw;
+    font-size: 2.5vw;
+}
+
+.video-type .artistes{
+    color: red;
+    text-align: end;
+    margin: 0.2vw;
+    font-size: 1.3vw;
+}
+
+.fontawesome{
+    background-color: rgb(119, 136, 136);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fontawesome .mobile,.ecran-large,.portable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3vw;
+}
+
+.fontawesome .i{
+    width: 6vw;
+    height: 6vw;
+    border: black 0.5vw solid;
+    border-radius: 50% 50% 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+    margin: 3vw;
+}
+
+.fontawesome i{
+    color: red;
+    font-size: 3vw;
+    margin: 2vw;
+}
+
+.fontawesome h3{
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+.inscription{
+    background-color: yellow;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.inscription .text-animation{
+    width: 50vw;
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inscription .text-animation,.formulaire{
+    width: 50vw;
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inscription .text-animation,.formulaire input,textarea{
+    font-size: 1.5vw;
+}
+
+.inscription .text-animation .h1,.h2{
+    display: flex;
+    justify-content: center;
+    margin: 0.5vw;
+}
+
+.inscription .text-animation h1{
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.inscription .text-animation h2{
+    font-size: 2.5vw;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.inscription .text-animation .react{
+    display: flex;
+    justify-content: center;
+    font-size: 10vw;
+    margin: 1vw 0vw 0vw 0vw;
+    animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+        color: rgb(196, 45, 45);
+    }
+    50%{
+        transform: rotate(180deg);
+        color: rgb(241, 145, 185);
+    }
+    100%{
+        transform: rotate(360deg);
+        color: rgb(187, 55, 55);
+    }
+}
+
+.inscription .formulaire form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inscription .formulaire form .nom,.email{
+    width: 35vw;
+    height: 3vw;
+}
+
+.inscription .formulaire form .message{
+    width: 35vw;
+    height: 6vw;
+    margin-left: 1vw;
+}
+
+.inscription .formulaire form .submit{
+    width: 5vw;
+    height: 3vw;
+    font-size: medium;
+    margin-left: 16vw;
+}
+
+.inscription input{
+    margin: 1vw;
+}
+
+footer{
+    background-color: rgb(51, 51, 50);
+    display: flex;
+    justify-content: end;
+    padding: 1vw;
+    font-size: 3vw;
+}
